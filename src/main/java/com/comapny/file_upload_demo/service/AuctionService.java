@@ -24,7 +24,7 @@ public class AuctionService {
 
     private final ImageRepostiory imageRepostiory;
 
-    private static String uploadDir = System.getProperty("user.dir") + "/src/main/resources/static/images";
+    private static String uploadDir = System.getProperty("user.dir") + "/target/classes/static/images";
 
 
     @Autowired

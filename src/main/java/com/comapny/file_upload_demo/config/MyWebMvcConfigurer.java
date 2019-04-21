@@ -8,6 +8,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class MyWebMvcConfigurer implements WebMvcConfigurer {
 
+    private static String uploadDir = System.getProperty("user.dir") + "/src/main/resources/static/images";
+
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**");
