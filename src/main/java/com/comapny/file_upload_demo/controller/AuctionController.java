@@ -22,7 +22,7 @@ public class AuctionController {
 
     @PostMapping
     public String uploadAuction(@Validated @RequestBody JsonAuction auction) {
-        System.out.println(auction);
+        auctionService.postAuction(auction);
 
         return "OK";
     }
